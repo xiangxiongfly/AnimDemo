@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/opt_xml_translate"
+        android:title="XML 位移动画"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/opt_java_translate"
+        android:title="Java 位移动画"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/opt_xml_scale"
+        android:title="XML 缩放动画"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/opt_java_scale"
+        android:title="Java 缩放动画"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/opt_xml_rotate"
+        android:title="XML 旋转动画"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/opt_java_rotate"
+        android:title="Java 旋转动画"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/opt_xml_alpha"
+        android:title="XML 透明度动画"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/opt_java_alpha"
+        android:title="Java 透明度动画"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/opt_xml_set"
+        android:title="XML 组合动画"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/opt_java_set"
+        android:title="Java 组合动画"
+        app:showAsAction="never" />
+</menu>

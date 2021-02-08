@@ -9,6 +9,9 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
+    private Button btnFrameAnimation;
+    private Button btnTweenAnimation;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,9 +20,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void initViews() {
-        Button btnFrameAnimation = findViewById(R.id.btnFrameAnimation);
+        btnFrameAnimation = findViewById(R.id.btnFrameAnimation);
+        btnTweenAnimation = findViewById(R.id.btnTweenAnimation);
 
         btnFrameAnimation.setOnClickListener(this);
+        btnTweenAnimation.setOnClickListener(this);
     }
 
     @Override
@@ -27,6 +32,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()) {
             case R.id.btnFrameAnimation:
                 startActivity(new Intent(this, FrameAnimationActivity.class));
+                break;
+            case R.id.btnTweenAnimation:
+                startActivity(new Intent(this, TweenAnimationActivity.class));
                 break;
         }
     }

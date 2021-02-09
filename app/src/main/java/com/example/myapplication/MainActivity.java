@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private Button btnFrameAnimation;
     private Button btnTweenAnimation;
+    private Button btnAnimator;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,9 +23,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void initViews() {
         btnFrameAnimation = findViewById(R.id.btnFrameAnimation);
         btnTweenAnimation = findViewById(R.id.btnTweenAnimation);
+        btnAnimator = findViewById(R.id.btnAnimator);
 
         btnFrameAnimation.setOnClickListener(this);
         btnTweenAnimation.setOnClickListener(this);
+        btnAnimator.setOnClickListener(this);
     }
 
     @Override
@@ -35,6 +38,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btnTweenAnimation:
                 startActivity(new Intent(this, TweenAnimationActivity.class));
+                break;
+            case R.id.btnAnimator:
+                startActivity(new Intent(this, AnimatorActivity.class));
                 break;
         }
     }

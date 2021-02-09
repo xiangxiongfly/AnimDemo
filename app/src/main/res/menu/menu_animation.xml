@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/opt_xml_translate"
-        android:title="XML 位移动画"
+        android:title="XML 平移动画"
         app:showAsAction="never" />
     <item
         android:id="@+id/opt_java_translate"

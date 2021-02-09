@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/opt_translation"
+        android:title="平移动画"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/opt_scale"
+        android:title="缩放动画"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/opt_rotation"
+        android:title="旋转动画"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/opt_alpha"
+        android:title="透明度动画"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/opt_set"
+        android:title="组合动画"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/opt_value_animator"
+        android:title="ValueAnimator"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/opt_type_evaluator"
+        android:title="TypeEvaluator"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/opt_myview"
+        android:title="MyView"
+        app:showAsAction="never" />
+</menu>

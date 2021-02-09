@@ -9,9 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
+        <activity android:name=".MyViewActivity"></activity>
+        <activity
+            android:name=".AnimatorActivity"
+            android:label="属性动画" />
         <activity
             android:name=".TweenAnimationActivity"
-            android:label="补间动画"></activity>
+            android:label="补间动画" />
         <activity
             android:name=".FrameAnimationActivity"
             android:label="帧动画" />

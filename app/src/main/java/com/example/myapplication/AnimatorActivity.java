@@ -2,6 +2,8 @@ package com.example.myapplication;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+import androidx.core.view.ViewCompat;
 
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
@@ -69,6 +71,9 @@ public class AnimatorActivity extends AppCompatActivity {
                 break;
             case R.id.opt_myview:
                 startActivity(new Intent(this, MyViewActivity.class));
+                break;
+            case R.id.opt_view_property:
+                startViewPropertyAnimator();
                 break;
         }
         return true;
@@ -167,5 +172,19 @@ public class AnimatorActivity extends AppCompatActivity {
         }
     }
 
+    private void startViewPropertyAnimator() {
+        //透明度动画
+//        imageView.animate().alpha(0.5f).setDuration(2000L);
+//        ViewCompat.animate(imageView).alpha(0.5f);
+
+        //平移动画
+//        imageView.animate().translationX(500f).setDuration(2000L);
+
+        //旋转动画
+//        imageView.animate().rotation(360).setDuration(2000L);
+
+        //缩放动画
+        imageView.animate().scaleX(1.5F).setDuration(2000L);
+    }
 
 }

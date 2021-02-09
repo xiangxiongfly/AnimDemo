@@ -33,4 +33,8 @@
         android:id="@+id/opt_myview"
         android:title="MyView"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/opt_view_property"
+        android:title="ViewPropertyAnimator"
+        app:showAsAction="never" />
 </menu>

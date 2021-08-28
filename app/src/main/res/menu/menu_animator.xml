@@ -27,7 +27,7 @@
         app:showAsAction="never" />
     <item
         android:id="@+id/opt_type_interpolator"
-        android:title="Interpolator差值器"
+        android:title="Interpolator插值器"
         app:showAsAction="never" />
     <item
         android:id="@+id/opt_type_evaluator"

@@ -26,12 +26,16 @@
         android:title="ValueAnimator"
         app:showAsAction="never" />
     <item
+        android:id="@+id/opt_type_interpolator"
+        android:title="Interpolator差值器"
+        app:showAsAction="never" />
+    <item
         android:id="@+id/opt_type_evaluator"
-        android:title="TypeEvaluator"
+        android:title="TypeEvaluator估值器"
         app:showAsAction="never" />
     <item
         android:id="@+id/opt_myview"
-        android:title="MyView"
+        android:title="MyView自定义动画"
         app:showAsAction="never" />
     <item
         android:id="@+id/opt_view_property"

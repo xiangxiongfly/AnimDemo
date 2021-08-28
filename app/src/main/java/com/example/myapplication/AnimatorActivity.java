@@ -17,8 +17,12 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.DecelerateInterpolator;
+import android.view.animation.LinearInterpolator;
 import android.widget.ImageView;
 
+import com.example.myapplication.interpolator.InterpolatorActivity;
+
+import static android.animation.ValueAnimator.INFINITE;
 import static com.example.myapplication.Constant.*;
 
 public class AnimatorActivity extends AppCompatActivity {
@@ -65,6 +69,8 @@ public class AnimatorActivity extends AppCompatActivity {
                 break;
             case R.id.opt_value_animator:
                 startValueAnimator();
+            case R.id.opt_type_interpolator:
+                startActivity(new Intent(this, InterpolatorActivity.class));
                 break;
             case R.id.opt_type_evaluator:
                 startTypeEvaluator();
@@ -93,10 +99,20 @@ public class AnimatorActivity extends AppCompatActivity {
         animator.start();
     }
 
+    //旋转动画
     private void rotaion() {
+        //旋转3次
+//        ObjectAnimator animator = ObjectAnimator.ofFloat(imageView, ROTATION, 0f, 360f);
+//        animator.setDuration(2000L);
+//        animator.setRepeatCount(3);
+//        animator.start();
+
+        //匀速一直旋转
         ObjectAnimator animator = ObjectAnimator.ofFloat(imageView, ROTATION, 0f, 360f);
         animator.setDuration(2000L);
-        animator.setRepeatCount(3);
+        animator.setRepeatCount(INFINITE);
+        animator.setRepeatMode(ValueAnimator.RESTART);
+        animator.setInterpolator(new LinearInterpolator());
         animator.start();
     }
 
